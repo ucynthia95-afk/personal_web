@@ -236,33 +236,3 @@ body.light-mode footer .social-icons a {
 body.light-mode footer .social-icons a:hover {
     color: var(--primary-color-light);
 }```
-
-### 檔案三： script.js
-
-這段 JavaScript 程式碼的職責很單純：監聽「切換模式」按鈕的點擊事件。它會等到整個網頁的 DOM 結構都載入完成後才開始執行，確保能正確地抓取到按鈕與 `body` 元素。每次點擊，它都會使用 `classList.toggle` 方法來為 `body` 新增或移除 `.light-mode` 這個 class，從而觸發 CSS 中對應的樣式變更。
-
-```javascript
-document.addEventListener('DOMContentLoaded', () => {
-    // 獲取需要操作的 DOM 元素
-    const themeToggleButton = document.getElementById('theme-toggle');
-    const bodyElement = document.body;
-
-    // 檢查使用者是否有偏好的模式設定 (可選功能，提升體驗)
-    // const currentTheme = localStorage.getItem('theme');
-    // if (currentTheme === 'light') {
-    //     bodyElement.classList.add('light-mode');
-    // }
-
-    // 為模式切換按鈕添加點擊事件監聽器
-    themeToggleButton.addEventListener('click', () => {
-        // 使用 classList.toggle() 來新增/移除 'light-mode' class
-        bodyElement.classList.toggle('light-mode');
-
-        // 將使用者的選擇存儲在 localStorage (可選功能)
-        // let theme = 'dark';
-        // if (bodyElement.classList.contains('light-mode')) {
-        //     theme = 'light';
-        // }
-        // localStorage.setItem('theme', theme);
-    });
-});
