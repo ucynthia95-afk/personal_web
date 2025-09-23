@@ -3,74 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的個人介紹</title>
+    <title>王大明 | 全端網頁開發者</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- 引入外部 CSS 樣式檔 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
+
+    <header>
         <nav>
+            <div class="logo">我的作品集</div>
             <ul>
                 <li><a href="#about">關於我</a></li>
                 <li><a href="#projects">專案</a></li>
-                <li><a href="#contact">聯絡</a></li>
-                <li><button id="theme-toggle" class="theme-toggle-button">切換模式</button></li> <!-- 新增模式切換按鈕 -->
+                <li><a href="#contact">聯絡我</a></li>
             </ul>
+            <button id="theme-toggle">切換模式</button>
         </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
-            <h1>Wen Yu</h1>
-            <p>[請填寫你的學校與科系]</p>
+        <section id="hero">
+            <h1>你好，我是王大明</h1>
+            <p>一位熱愛打造精美網站的全端開發者</p>
+            <a href="#projects" class="cta-button">查看我的專案</a>
         </section>
 
-        <section id="about" class="about-section">
+        <section id="about">
             <h2>關於我</h2>
-            <p>
-                我是一位熱衷於前端開發的學生，專注於使用現代網頁技術建立高效且用戶友好的介面。
-                我對學習新技術充滿熱情，並渴望將理論知識應用於實際專案中。
-                除了編碼，我也喜歡探索設計模式與優化用戶體驗的方法。
-            </p>
+            <p>我擁有超過五年的網頁開發經驗，專長在於 React、Node.js 與資料庫設計。我致力於撰寫乾淨、高效能的程式碼，並對使用者體驗有著極高的要求。閒暇時，我喜歡研究最新的前端技術與動畫效果。</p>
         </section>
 
-        <section id="projects" class="projects-section">
-            <h2>專案</h2>
-            <div class="project-grid">
+        <section id="projects">
+            <h2>我的專案</h2>
+            <div class="projects-grid">
                 <div class="project-card">
-                    <h3>專案一：響應式個人作品集</h3>
-                    <p>
-                        使用 HTML5 和 CSS3 建立一個響應式的個人作品集網站。
-                        網站包含了關於我、專案展示和聯絡方式，並在不同裝置上提供良好的用戶體驗。
-                    </p>
+                    <img src="https://via.placeholder.com/400x250/808080/FFFFFF?text=Project+A" alt="專案 A">
+                    <h3>專案 A：電商平台</h3>
+                    <p>一個使用 MERN 技術棧開發的全功能電商網站，具備使用者驗證、商品管理與金流串接功能。</p>
+                    <a href="#" target="_blank">查看詳情</a>
                 </div>
                 <div class="project-card">
-                    <h3>專案二：任務管理應用程式原型</h3>
-                    <p>
-                        一個基於網頁的任務管理應用程式原型，允許用戶新增、編輯和刪除任務。
-                        介面簡潔直觀，並實作了基本的前端互動邏輯。
-                    </p>
+                    <img src="https://via.placeholder.com/400x250/808080/FFFFFF?text=Project+B" alt="專案 B">
+                    <h3>專案 B：任務管理工具</h3>
+                    <p>一個使用 Vue.js 與 Firebase 打造的即時協作任務管理應用，支援拖拉式操作與即時通知。</p>
+                    <a href="#" target="_blank">查看詳情</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/808080/FFFFFF?text=Project+C" alt="專案 C">
+                    <h3>專案 C：個人部落格</h3>
+                    <p>一個使用 Next.js 開發的靜態生成部落格，載入速度極快，並具備優異的 SEO 表現。</p>
+                    <a href="#" target="_blank">查看詳情</a>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
-            <h2>聯絡方式</h2>
-            <a href="mailto:[請填寫你的Email]" class="contact-button">Email 我</a>
+        <section id="contact">
+            <h2>聯絡我</h2>
+            <p>如果您對我的作品感興趣，或是有任何合作機會，歡迎隨時與我聯繫！</p>
+            <div class="contact-links">
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i> email@example.com</a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <p>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a> |
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </p>
-        <p>&copy; 2025 WenYu. 版權所有。</p>
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 王大明. 保留一切權利。</p>
     </footer>
 
-    <!-- 引入外部 JavaScript 腳本檔 -->
     <script src="script.js"></script>
 </body>
 </html>
