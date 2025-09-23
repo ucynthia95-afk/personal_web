@@ -1,0 +1,203 @@
+/* 通用樣式 */
+html {
+    scroll-behavior: smooth; /* 讓頁內跳轉更流暢 */
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #f7fafc; /* 文字顏色 */
+    background-color: #1a202c; /* 背景色 */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4fd1c5; /* 強調色 */
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #4fd1c5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 導覽列 (Navbar) */
+.navbar {
+    background-color: #2d3748; /* 卡片背景色 */
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.navbar nav ul li {
+    margin: 0 1.5rem;
+}
+
+.navbar nav ul li a {
+    color: #f7fafc;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #4fd1c5;
+    text-decoration: none;
+}
+
+/* 區塊通用樣式 */
+section {
+    padding: 4rem 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 英雄區塊 (Hero Section) */
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.8)), url('https://picsum.photos/id/1043/1600/900') no-repeat center center/cover;
+    background-attachment: fixed; /* 視覺效果 */
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    color: #f7fafc;
+}
+
+.hero-section p {
+    font-size: 1.8rem;
+    color: #4fd1c5;
+}
+
+/* 關於我 (About Me) */
+.about-section {
+    background-color: #2d3748;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* 專案 (Projects) */
+.projects-section h2 {
+    margin-bottom: 2.5rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: #2d3748;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #4fd1c5;
+    font-size: 1.5rem;
+}
+
+/* 聯絡方式 (Contact) */
+.contact-section {
+    background-color: #2d3748;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #4fd1c5;
+    color: #1a202c;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #38b2ac;
+    color: #f7fafc;
+    text-decoration: none;
+}
+
+/* 頁尾 (Footer) */
+.footer {
+    background-color: #2d3748;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #4fd1c5;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.footer a {
+    margin: 0 0.5rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .navbar nav ul {
+        flex-direction: column;
+    }
+
+    .navbar nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 3rem 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
