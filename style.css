@@ -1,8 +1,8 @@
 /* --- 通用與全域設定 --- */
 :root {
     /* 深色模式變數 */
-    --bg-dark: #1a202c;
-    --surface-dark: #2d3748;
+    --bg-dark: #314f68;
+    --surface-dark: #738b8f;
     --accent-dark: #e0ffff;
     --text-dark: #f7fafc;
     --text-muted-dark: #a0aec0;
@@ -10,7 +10,7 @@
     /* 淺色模式變數 */
     --bg-light: #e6e6fa;
     --surface-light: #ffffff;
-    --accent-light: 	#48d1cc;
+    --accent-light: 	#7bc9c6;
     --text-light: #1a202c;
     --text-muted-light: #4a5568;
 }

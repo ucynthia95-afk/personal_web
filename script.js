@@ -1,4 +1,3 @@
-```javascript
 document.addEventListener('DOMContentLoaded', () => {
     // 獲取需要操作的 DOM 元素
     const themeToggleButton = document.getElementById('theme-toggle');
