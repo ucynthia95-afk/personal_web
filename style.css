@@ -3,14 +3,14 @@
     /* 深色模式變數 */
     --bg-dark: #1a202c;
     --surface-dark: #2d3748;
-    --accent-dark: #4fd1c5;
+    --accent-dark: #e0ffff;
     --text-dark: #f7fafc;
     --text-muted-dark: #a0aec0;
 
     /* 淺色模式變數 */
-    --bg-light: #f7fafc;
+    --bg-light: #e6e6fa;
     --surface-light: #ffffff;
-    --accent-light: #2b6cb0;
+    --accent-light: 	#48d1cc;
     --text-light: #1a202c;
     --text-muted-light: #4a5568;
 }
